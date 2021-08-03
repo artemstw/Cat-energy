@@ -1,1 +1,22 @@
+@import "global/normalize";
 
+// Global
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+// Blocks
+
+// Main Page Styles
+
+@import "blocks/page";
+@import "blocks/page__body";
+@import "blocks/header";
+@import "blocks/main-block";
+@import "blocks/programs";
+@import "blocks/guide";
+@import "blocks/example";
+@import "blocks/cooperation";
+@import "blocks/page-footer";
+@import "blocks/developer";

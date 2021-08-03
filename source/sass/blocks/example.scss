@@ -1,0 +1,17 @@
+.example {
+  background-color: $background-grey;
+}
+
+.example__header {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+}
+
+.example__result {
+  line-height: 20px;
+  text-transform: uppercase;
+}
