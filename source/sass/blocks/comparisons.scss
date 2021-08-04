@@ -1,0 +1,18 @@
+.comparisons {
+  background-color: $background-grey;
+}
+
+.comparisons__wrapper {
+  display: flex;
+  padding-right: 45px;
+  padding-left: 47px;
+}
+
+.comparisons__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+}
