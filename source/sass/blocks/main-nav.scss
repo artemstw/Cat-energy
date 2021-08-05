@@ -1,0 +1,10 @@
+.main-nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: $basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
