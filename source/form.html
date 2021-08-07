@@ -49,7 +49,7 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
 
-        <fieldset class="cat-data__field">
+        <fieldset class="cat-data__fieldset">
           <label class="cat-data__label" for="cat-name">Имя*</label>
           <input
             class="cat-data__input"
@@ -59,7 +59,7 @@
             placeholder="Барсик"
             required
           /><br />
-          <label class="cat-data__label" for="cat-weight">Вес(Кг):*</label>
+          <label class="cat-data__label" for="cat-weight">Вес (Кг):*</label>
           <input
             class="cat-data__input"
             type="text"
@@ -68,7 +68,7 @@
             placeholder="7"
             required
           /><br />
-          <label class="cat-data__label" for="cat-age">Возраст(Лет):</label>
+          <label class="cat-data__label" for="cat-age">Возраст (Лет):</label>
           <input
             class="cat-data__input"
             type="text"
@@ -77,27 +77,35 @@
             placeholder="7"
           />
         </fieldset>
-        <fieldset class="cat-data__field">
-          <label for="radio-1"> Похудение</label>
-          <input type="radio" id="radio-1" name="aim-question" checked /><br />
-          <label for="radio-2">Набор массы</label>
-          <input type="radio" id="radio-2" name="aim-question" /><br />
-          <label for="radio-3">Не знаю (нужен ваш совет)</label>
+        
+        <fieldset class="cat-data__fieldset">
+          <input type="radio" id="radio-1" name="aim-question" checked />
+          <label class="cat-data__label" for="radio-1"> Похудение</label><br />
+          <input type="radio" id="radio-2" name="aim-question" />
+          <label class="cat-data__label" for="radio-2">Набор массы</label><br />
           <input type="radio" id="radio-3" name="aim-question" />
+          <label class="cat-data__label" for="radio-3"
+            >Не знаю (нужен ваш совет)</label
+          >
         </fieldset>
 
         <section class="owner">
-          <h3 class="owner__title">Контактные данные (владельца кота)</h3>
+          <h2 class="owner__title">
+            Контактные данные<br />
+            (владельца кота)
+          </h2>
           <fieldset class="owner__field">
-            <label for="email">E-mail:*</label>
+            <label class="owner__label" for="email">E-mail:*</label>
             <input
+              class="owner__input email-input"
               type="email"
               id="email"
               placeholder="Kuklachev@gmail.com"
               required
             /><br />
-            <label for="phone">Телефон:*</label>
+            <label class="owner__label" for="phone">Телефон:*</label>
             <input
+              class="owner__input phone-input"
               type="tel"
               id="phone"
               placeholder="8 (960) 900-60-90"
@@ -105,26 +113,49 @@
             />
           </fieldset>
         </section>
-        <section class="comment">
-          <h3 class="comment__title">Комментарий</h3>
-          <textarea id="comment-field" name="comment" cols="60" rows="5">
+
+        <section class="comment container">
+          <h2 class="comment__title">Комментарий</h2>
+          <textarea class="comment__area" id="comment-field" name="comment">
             Расскажите обо всех повадках кота
           </textarea>
         </section>
 
-        <section class="additional">
-          <h3 class="additional__title">Дополнительно</h3>
-          <fieldset>
-            <label for="check-1">Сахарозаменитель</label>
-            <input type="checkbox" id="check-1" checked /><br />
-            <label for="check-2">Питьевая вода</label>
-            <input type="checkbox" id="check-2" /><br />
-            <label for="check-3">Молоко</label>
-            <input type="checkbox" id="check-3" /><br />
-            <label for="check-4">Витамины</label>
-            <input type="checkbox" id="check-4" />
+
+        <fieldset class="cat-data__fieldset">
+        <section class="additional container">
+          <h2 class="additional__title">Дополнительно</h2>
+          <ul>
+            <li>
+              <input
+              class="additional__class"
+              type="checkbox"
+              id="check-1"
+              checked>
+              <label class="additional__label" for="check-1">Сахарозаменитель</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="check-2" />
+              <label for="check-2">Питьевая вода</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="check-3" />
+              <label for="check-3">Молоко</label>
+            </li>
+
+            <li>
+              <input type="checkbox" id="check-4" />
+              <label for="check-4">Витамины</label>
+            </li>
+
+          </ul>
           </fieldset>
-          <button class="additional__button">Отправить заявку</button>
+
+          <button class="additional__button green-button">
+            Отправить заявку
+          </button>
           <p class="additional__text">* — Обязательные поля</p>
         </section>
       </form>
