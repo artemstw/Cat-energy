@@ -17,7 +17,7 @@
   width: 320px;
   height: 304px;
   background-color: $basic-green;
-  background-image: url(img/main-background-image.jpg);
+  background-image: url(/img/main-background-image.jpg);
   background-size: 320px auto;
 }
 
@@ -26,6 +26,8 @@
   padding: 0;
   font-size: 36px;
   line-height: 36px;
+  color: $basic-white;
+  font-weight: $regular;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -33,6 +35,7 @@
 .main-block__slogan {
   margin: 0;
   padding: 0;
+  color: $basic-white;
   text-transform: uppercase;
   line-height: 14px;
   text-align: center;
@@ -47,12 +50,5 @@
   color: $basic-white;
   text-transform: uppercase;
   border: none;
-  margin: 0 20px;
   cursor: pointer;
 }
-
-// .main-block__image {
-//   position: relative;
-//   width: 280px;
-//   height: 270px;
-// }

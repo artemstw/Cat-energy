@@ -4,11 +4,21 @@
 }
 
 .page-main__header--form {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: $regular;
+  padding: 27px 41px 0 20px;
+  margin-bottom: 37px;
+}
+
+.page-main__header--catalog {
   margin: 0;
   padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: $regular;
   padding: 27px 41px 0 20px;
   margin-bottom: 37px;
 }

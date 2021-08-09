@@ -1,6 +1,12 @@
+.guide {
+  padding: 0 20px;
+  margin-bottom: 36px;
+}
+
 .guide__header {
   font-size: 36px;
   line-height: 40px;
+  font-weight: $regular;
 }
 
 .guide__list {
@@ -9,6 +15,14 @@
   list-style: none;
 }
 
+.guide__item {
+  margin-bottom: 20px;
+}
+
 .guide__text {
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
+  font-size: 14px;
+  padding-left: 80px;
 }
