@@ -1,0 +1,42 @@
+.plus {
+  background: $plus-color;
+  height: 30px;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+.plus:after {
+  background: $plus-color;
+  content: "";
+  height: 2px;
+  top: 15px;
+  left: -15px;
+  position: absolute;
+  width: 30px;
+}
+
+.show-more {
+  padding: 0 20px;
+}
+
+.show-more__header {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.show-more__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 21px;
+}

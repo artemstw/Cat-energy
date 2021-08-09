@@ -10,18 +10,18 @@
 
 // Main Page Styles
 
-@import "blocks/page";
-@import "blocks/page__body";
-@import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/page-main";
-@import "blocks/main-block";
-@import "blocks/programs";
-@import "blocks/guide";
-@import "blocks/example";
-@import "blocks/contacts";
-@import "blocks/page-footer";
-@import "blocks/developer";
+@import "blocks/page.scss";
+@import "blocks/page__body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-block.scss";
+@import "blocks/programs.scss";
+@import "blocks/guide.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/developer.scss";
 
 // Form Page Styles
 
@@ -30,3 +30,6 @@
 // Catalog Page Styles
 
 @import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/show-more.scss";
+@import "blocks/add-products.scss";
