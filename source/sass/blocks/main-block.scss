@@ -1,3 +1,26 @@
+.main-block {
+  background-repeat: no-repeat;
+  background-size: 100% 306px;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.main-block::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 304px;
+  background-color: $basic-green;
+  background-image: url(img/main-background-image.jpg);
+  background-size: 320px auto;
+}
+
 .main-block__header {
   margin: 0;
   padding: 0;
@@ -27,3 +50,9 @@
   margin: 0 20px;
   cursor: pointer;
 }
+
+// .main-block__image {
+//   position: relative;
+//   width: 280px;
+//   height: 270px;
+// }

@@ -16,8 +16,8 @@
   </head>
   <body class="page__body">
     <div class="container">
-      <header class="header">
-        <a class="header__logo">
+      <header class="page-header">
+        <a class="page-header__logo">
           <img
             src="img/logo-mobile.svg"
             width="34"
@@ -25,7 +25,7 @@
             alt="Логотип Кэт Энерджи"
           />
         </a>
-        <a class="header__brand">
+        <a class="page-header__brand">
           <img
             src="img/brand-logo.svg"
             width="101"
@@ -33,7 +33,7 @@
             alt="Брэнд кошечьего питания Кэт Энерджи"
           />
         </a>
-        <nav class="main-nav">
+        <nav class="page-header__nav main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -55,12 +55,10 @@
     </div>
     <main class="page-main">
       <section class="main-block container">
-        <div class="main-block__wrapper">
-          <h1 class="main-block__header">Функциональное питание для котов</h1>
-          <p class="main-block__slogan">Занялся собой? Займись котом!</p>
-        </div>
+        <h1 class="main-block__header">Функциональное питание для котов</h1>
+        <p class="main-block__slogan">Занялся собой? Займись котом!</p>
         <img
-          class="can-image"
+          class="main-block__image"
           src="img/food-can-mobile.png"
           width="280"
           height="270"
