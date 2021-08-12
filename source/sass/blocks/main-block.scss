@@ -42,13 +42,15 @@
   margin-bottom: 29px;
 }
 
-.search-button,
-.green-button {
+.main-block__button {
   width: 280px;
   height: 40px;
-  background-color: $basic-green;
   color: $basic-white;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+.main-block__button--green {
+  background-color: $basic-green;
 }

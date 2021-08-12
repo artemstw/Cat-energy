@@ -5,3 +5,16 @@
   text-transform: uppercase;
   font-weight: $regular;
 }
+
+.product__button {
+  width: 280px;
+  height: 40px;
+  color: $basic-white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.product__button--green {
+  background-color: $basic-green;
+}

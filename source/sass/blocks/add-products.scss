@@ -16,3 +16,16 @@
   text-transform: uppercase;
   font-weight: $regular;
 }
+
+.add-products__button {
+  width: 280px;
+  height: 40px;
+  color: $basic-white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.add-products__button--green {
+  background-color: $basic-green;
+}

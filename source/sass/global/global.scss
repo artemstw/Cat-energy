@@ -3,6 +3,12 @@ img {
   height: auto;
 }
 
+.container {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

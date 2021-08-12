@@ -42,3 +42,16 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.form__button {
+  width: 280px;
+  height: 40px;
+  color: $basic-white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.form__button--green {
+  background-color: $basic-green;
+}

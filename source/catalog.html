@@ -15,8 +15,8 @@
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
-    <header class="header">
-      <div class="header__wrapper">
+    <div class="container">
+      <header class="header">
         <a class="header__logo" href="index.html">
           <img
             src="img/logo-mobile.svg"
@@ -38,10 +38,10 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
-      </div>
-    </header>
-    <main class="page-main">
-      <h1 class="page-main__header page-main__header--catalog container">
+      </header>
+    </div>
+    <main class="page-main container">
+      <h1 class="page-main__header page-main__header--catalog">
         Каталог продукции
       </h1>
       <section class="catalog container">
@@ -75,7 +75,9 @@
                 </tbody>
               </table>
             </div>
-            <button class="product__button green-button">Заказать</button>
+            <button class="product__button product__button--green">
+              Заказать
+            </button>
           </li>
 
           <li class="products__item product">
@@ -107,7 +109,9 @@
                 </tbody>
               </table>
             </div>
-            <button class="catalog__button green-button">Заказать</button>
+            <button class="product__button product__button--green">
+              Заказать
+            </button>
           </li>
 
           <li class="products__item product">
@@ -138,7 +142,9 @@
                   </tr>
                 </tbody>
               </table>
-              <button class="catalog__button green-button">Заказать</button>
+              <button class="product__button product__button--green">
+                Заказать
+              </button>
             </div>
           </li>
 
@@ -171,7 +177,9 @@
                 </tbody>
               </table>
             </div>
-            <button class="catalog__button green-button">Заказать</button>
+            <button class="product__button product__button--green">
+              Заказать
+            </button>
           </li>
 
           <li class="products__item product">
@@ -203,7 +211,9 @@
                 </tbody>
               </table>
             </div>
-            <button class="catalog__button green-button">Заказать</button>
+            <button class="product__button product__button--green">
+              Заказать
+            </button>
           </li>
 
           <li class="products__item product">
@@ -235,7 +245,9 @@
                 </tbody>
               </table>
             </div>
-            <button class="catalog__button green-button">Заказать</button>
+            <button class="product__button product__button--green">
+              Заказать
+            </button>
           </li>
 
           <li class="products__item product">
@@ -267,7 +279,9 @@
                 </tbody>
               </table>
             </div>
-            <button class="catalog__button green-button">Заказать</button>
+            <button class="product__button product__button--green">
+              Заказать
+            </button>
           </li>
         </ul>
       </section>
@@ -276,10 +290,12 @@
         <div class="plus"></div>
         <h3 class="show-more__header">Показать еще 100500 товаров</h3>
         <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-        <button class="show-more__button">Показать все</button>
+        <button class="show-more__button show-more__button--grey">
+          Показать все
+        </button>
       </section>
 
-      <section class="add-products">
+      <section class="add-products container">
         <h2 class="add-products__header">Дополнительные товары</h2>
         <ul class="add-products__list">
           <li class="add-products__item">
@@ -287,33 +303,33 @@
             <p class="add-products__amount">1 упаковка (100 г)</p>
             <p class="add-products__price">200 р.</p>
             <br />
-            <button class="add-products__button">Заказать</button>
+            <button class="add-products__button add-products__button--green">Заказать</button>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__title">Питьевая вода</h3>
             <p class="add-products__amount">1 упаковка (100 г)</p>
             <p class="add-products__price">50 р.</p>
             <br />
-            <button class="add-products__button">Заказать</button>
+            <button class="add-products__button add-products__button--green">Заказать</button>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__title">Молоко</h3>
             <p class="add-products__amount">1 упаковка (100 г)</p>
             <p class="add-products__price">100 р.</p>
             <br />
-            <button class="add-products__button">Заказать</button>
+            <button class="add-products__button add-products__button--green">Заказать</button>
           </li>
           <li class="add-products__item">
             <h3 class="add-products__title">Витамины</h3>
             <p class="add-products__amount">1 упаковка (100 г)</p>
             <p class="add-products__price">300 р.</p>
             <br />
-            <button class="add-products__button green-button">Заказать</button>
+            <button class="add-products__button add-products__button--green">Заказать</button>
           </li>
         </ul>
       </section>
 
-      <section class="gift">
+      <section class="gift container">
         <img
           src="img/gift-image.jpg"
           width="280"
@@ -323,13 +339,13 @@
         <p>Закажите все и получите чехол для кота в подарок!</p>
       </section>
 
-      <section class="cooperation">
+      <section class="cooperation container">
         <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="cooperation__address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </section>
-      <section class="map">
+      <section class="map container">
         <img
           class="map__image"
           src="img/map.jpg"
@@ -340,7 +356,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <a>
           <img

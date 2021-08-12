@@ -40,8 +40,8 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
-      <h1 class="page-main__header page-main__header--form">
+    <main class="page-main container">
+      <h1 class="page-main__header page-main__header--form container">
         Подбор программы
       </h1>
       <form
@@ -54,7 +54,7 @@
           программу питания для вашего кота
         </p>
 
-        <fieldset class="form__fieldset container">
+        <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="cat-name">Имя*</label>
@@ -137,14 +137,14 @@
           </fieldset>
         </section>
 
-        <section class="form__comment container">
+        <section class="form__comment">
           <h2 class="form__header form__header--comment">Комментарий</h2>
           <textarea class="form__area" id="comment-field" name="comment">
             Расскажите обо всех повадках кота
           </textarea>
         </section>
 
-        <fieldset class="form__fieldset form__fieldset--additional container">
+        <fieldset class="form__fieldset form__fieldset--additional">
           <h2 class="form__header form__header-additional">Дополнительно</h2>
           <ul class="form__list">
             <li class="form__item">
@@ -169,18 +169,20 @@
           </ul>
         </fieldset>
 
-        <button class="form__button green-button">Отправить заявку</button>
+        <button class="form__button form__button--green">
+          Отправить заявку
+        </button>
         <p class="form__text">* — Обязательные поля</p>
       </form>
 
-      <section class="contacts container">
+      <section class="contacts">
         <h2 class="contacts__header">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts__address">
           ул. Большая<br />
           Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </section>
-      <section class="map container">
+      <section class="map">
         <img
           class="map__image"
           src="img/map.jpg"

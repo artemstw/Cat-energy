@@ -40,3 +40,16 @@
   line-height: 16px;
   margin-bottom: 21px;
 }
+
+.show-more__button {
+  width: 280px;
+  height: 40px;
+  color: $basic-black;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.show-more__button--grey {
+  background-color: $basic-grey;
+}
