@@ -1,0 +1,20 @@
+.contacts {
+  display: flex;
+  min-height: 114px;
+}
+
+.contacts__header {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+}

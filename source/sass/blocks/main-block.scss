@@ -1,0 +1,56 @@
+.main-block {
+  background-repeat: no-repeat;
+  background-size: 100% 306px;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.main-block::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 304px;
+  background-color: $basic-green;
+  background-image: url("/img/main-background-image.jpg");
+  background-size: 320px auto;
+}
+
+.main-block__header {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+  font-weight: $regular;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.main-block__slogan {
+  margin: 0;
+  padding: 0;
+  color: $basic-white;
+  text-transform: uppercase;
+  line-height: 14px;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.main-block__button {
+  width: 280px;
+  height: 40px;
+  color: $basic-white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.main-block__button--green {
+  background-color: $basic-green;
+}

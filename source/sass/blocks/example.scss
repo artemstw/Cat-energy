@@ -1,0 +1,87 @@
+.example {
+  background-color: $background-grey;
+}
+
+.example__header {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example__item {
+  width: 124px;
+  padding: 13px 0 18px;
+  text-align: center;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  position: relative;
+}
+
+.example__number {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__value {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 35px;
+  background-color: $background-grey;
+}
+
+.example__toggler-wrapper {
+  display: flex;
+}
+
+.example__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+}
+
+.example__scale {
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+  position: relative;
+}
+
+.example__scale-toggler {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
