@@ -1,10 +1,27 @@
 .main-nav__list {
   display: flex;
+  flex-direction: column;
   list-style: none;
+}
+
+.main-nav__wrapper {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 438px;
+  }
 }
 
 .main-nav__list a {
   color: $basic-black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-nav__toggle {
+  display: none;
 }

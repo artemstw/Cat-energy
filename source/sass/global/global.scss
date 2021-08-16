@@ -5,8 +5,20 @@ img {
 
 .container {
   width: $mobile-width;
-  margin: 0 auto;
-  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .visually-hidden {

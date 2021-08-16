@@ -7,6 +7,8 @@
   padding: 0;
   font-size: 36px;
   line-height: 40px;
+  font-weight: $regular;
+  padding-top: 27px;
   margin-bottom: 33px;
 }
 
@@ -23,6 +25,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 26px;
 }
 
 .example__item {
@@ -52,6 +55,12 @@
   bottom: -15px;
   left: 35px;
   background-color: $background-grey;
+}
+
+.example__result {
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .example__toggler-wrapper {

@@ -1,8 +1,11 @@
 .socials {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
+  margin-bottom: 46px;
 }
 
 .socials__item {
-  padding-right: 36px;
+  margin-right: 36px;
 }
