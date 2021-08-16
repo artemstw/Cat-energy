@@ -1,9 +1,10 @@
-.site-list__item {
-  padding-bottom: 46px;
-}
-
 .site-list__link {
+  display: block;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: $medium;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-top: 1px solid $border-grey;
 }

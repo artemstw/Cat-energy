@@ -1,19 +1,9 @@
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   list-style: none;
-}
-
-.main-nav__wrapper {
-  display: flex;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 438px;
-  }
 }
 
 .main-nav__list a {
