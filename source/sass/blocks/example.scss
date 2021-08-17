@@ -9,6 +9,7 @@
   line-height: 40px;
   font-weight: $regular;
   padding-top: 27px;
+  padding-left: 20px;
   margin-bottom: 33px;
 }
 
@@ -16,6 +17,8 @@
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-bottom: 25px;
 }
 
@@ -25,6 +28,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-bottom: 26px;
 }
 
@@ -58,17 +63,33 @@
 }
 
 .example__result {
+  margin: 0;
+  padding: 0;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 42px;
+}
+
+.example__image {
+  width: 311px;
+  height: 232px;
+  margin-bottom: 23px;
 }
 
 .example__toggler-wrapper {
   display: flex;
+  margin-right: 45px;
+  margin-left: 47px;
+  padding-bottom: 31px;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__button {
   background-color: transparent;
+  width: 69px;
+  height: 31px;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;

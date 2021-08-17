@@ -1,9 +1,12 @@
 .developer {
   display: flex;
+  padding-left: 20px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .developer__name {
   font-family: "Arial", sans-serif;
+  color: $special-dark-grey;
   font-size: 16px;
 }
