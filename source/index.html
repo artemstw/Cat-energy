@@ -18,12 +18,16 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo">
-          <img
-            src="img/mobile-logo.svg"
-            width="190"
-            height="38"
-            alt="Логотип Кэт Энерджи"
-          />
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/desktop-logo.svg" />
+            <source media="(min-width: 768px)" srcset="img/tablet-logo.svg" />
+            <img
+              src="img/mobile-logo.svg"
+              width="190"
+              height="38"
+              alt="Логотип Кэт Энерджи"
+            />
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
@@ -65,13 +69,22 @@
       <section class="main-block container">
         <h1 class="main-block__header">Функциональное питание для котов</h1>
         <p class="main-block__slogan">Занялся собой? Займись котом!</p>
-        <img
-          class="main-block__image"
-          src="img/food-can-mobile.png"
-          width="280"
-          height="270"
-          alt="Упаковка питания для котов Кэт Энерджи"
-        />
+
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/food-can-desktop.png"
+          />
+          <source media="(min-width: 768px)" srcset="img/food-can-tablet.png" />
+          <img
+            class="main-block__image"
+            src="img/food-can-mobile.png"
+            width="280"
+            height="270"
+            alt="Упаковка питания для котов Кэт Энерджи"
+          />
+        </picture>
+
         <button class="main-block__button main-block__button--green">
           Подобрать программу
         </button>
@@ -105,7 +118,7 @@
         <ul class="guide__list">
           <li class="guide__item">
             <img
-              class="advantages__image"
+              class="guide__image"
               src="img/leaf-icon.svg"
               width="60"
               height="60"
@@ -118,7 +131,7 @@
           </li>
           <li class="guide__item">
             <img
-              class="advantages__image"
+              class="guide__image"
               src="img/boiling-icon.svg"
               width="60"
               height="60"
@@ -132,7 +145,7 @@
           </li>
           <li class="guide__item">
             <img
-              class="advantages__image"
+              class="guide__image"
               src="img/fork-knife-icon.svg"
               width="60"
               height="60"
@@ -146,7 +159,7 @@
           </li>
           <li class="guide__item">
             <img
-              class="advantages__image"
+              class="guide__image"
               src="img/timer-icon.svg"
               width="60"
               height="60"

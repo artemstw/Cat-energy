@@ -1,13 +1,3 @@
-@media (min-width: $tablet-width) {
-  .site-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 438px;
-  }
-}
-
 .site-list__link {
   position: relative;
   display: block;
@@ -23,6 +13,9 @@
 @media (min-width: $tablet-width) {
   .site-list__link {
     border-top: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: $regular;
   }
 }
 

@@ -1,5 +1,20 @@
+@media (min-width: $tablet-width) {
+  .programs {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 .programs__column {
   background-color: $basic-grey;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__column {
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }
