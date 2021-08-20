@@ -15,4 +15,5 @@
   line-height: 18px;
   font-weight: $regular;
   color: $basic-black;
+  counter-reset: itemNum;
 }

@@ -52,12 +52,35 @@
     width: 230px;
     height: 280px;
     padding-right: 124px;
+    position: relative;
   }
+
+  .guide__item::after {
+    counter-increment: itemNum;
+    content: counter(itemNum);
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 120px;
+    width: 70px;
+    height: 230px;
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: $basic-grey;
+  }
+}
+
+.guide__image {
+  background-color: $basic-green;
+  width: 60px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
   .guide__image {
     margin-bottom: 31px;
+    padding: 20px;
   }
 }
 
