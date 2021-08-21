@@ -9,6 +9,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    justify-content: space-between;
+  }
+}
+
 .page-header__logo {
   display: block;
   height: 38px;

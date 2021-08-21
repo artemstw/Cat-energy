@@ -5,10 +5,23 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .programs {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
 .programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+  }
 }
 
 .programs__item {
@@ -25,3 +38,14 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs__item {
+    min-height: 374px;
+    min-width: 570px;
+    margin-right: 80px;
+    margin-bottom: 71px;
+  }
+}
+
+

@@ -36,6 +36,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .programs-item__title {
+    padding-left: 214px;
+  }
+}
+
 .programs-item__title--slim {
   position: relative;
   background-repeat: no-repeat;

@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .guide {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
 .guide__header {
   margin: 0;
   padding: 0;
@@ -38,6 +45,7 @@
   .guide__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -51,7 +59,6 @@
     flex-direction: column;
     width: 230px;
     height: 280px;
-    padding-right: 124px;
     position: relative;
   }
 
