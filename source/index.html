@@ -15,38 +15,40 @@
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
-    <header class="page-header container">
-      <a class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/desktop-logo.svg" />
-          <source media="(min-width: 768px)" srcset="img/tablet-logo.svg" />
-          <img
-            src="img/mobile-logo.svg"
-            width="190"
-            height="38"
-            alt="Логотип Кэт Энерджи"
-          />
-        </picture>
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link"> Главная </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html"> Подбор программы </a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/desktop-logo.svg" />
+            <source media="(min-width: 768px)" srcset="img/tablet-logo.svg" />
+            <img
+              src="img/mobile-logo.svg"
+              width="190"
+              height="38"
+              alt="Логотип Кэт Энерджи"
+            />
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html"> Подбор программы </a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </nav>
+      </header>
+    </div>
     <script>
       var navMain = document.querySelector(".main-nav");
       var navToggle = document.querySelector(".main-nav__toggle");
@@ -175,26 +177,32 @@
           </li>
         </ul>
       </section>
-      <section class="example container">
-        <h2 class="example__header">Живой пример</h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="example__list">
-          <li class="example__item">
-            <p class="example__number">5 кг</p>
-            <p class="example__value">снижение<br />веса</p>
-          </li>
-          <li class="example__item">
-            <p class="example__number">60 дней</p>
-            <p class="example__value">затрачено<br />времени</p>
-          </li>
-        </ul>
-        <p class="example__result">Затраты на питание: 15 000 РУБ.</p>
+      <section class="example">
+        <div class="example__wrapper container">
+          <div class="example__desktop-column-wrapper">
+            <h2 class="example__header">Живой пример</h2>
+            <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
 
-        <picture>
+            <div class="example__expences-wrapper">
+              <ul class="example__list">
+                <li class="example__item example-item">
+                  <p class="example-item__value">5 кг</p>
+                  <p class="example-item__title">снижение<br />веса</p>
+                </li>
+                <li class="example__item example-item">
+                  <p class="example-item__value">60 дней</p>
+                  <p class="example-item__title">затрачено<br />времени</p>
+                </li>
+              </ul>
+              <p class="example__expences">Затраты на питание: 15 000 РУБ.</p>
+            </div>
+          </div>
+          <div class="example__desktop-column-wrapper">
+          <picture>
           <source
             media="(min-width: 1440px)"
             srcset="img/example-cat-desktop.png"
@@ -210,17 +218,18 @@
             height="232"
             alt="Пухлый котик до использования питания Кэт Энерджи"
           />
-        </picture>
+          </picture>
 
-        <div class="example__toggler-wrapper">
-          <button class="example__button">Было</button>
-          <div class="example__scale">
-            <div class="example__scale-toggler"></div>
+          <div class="example__toggler-wrapper">
+            <button class="example__button">Было</button>
+            <div class="example__scale">
+              <div class="example__scale-toggler"></div>
+            </div>
+            <button class="example__button">Стало</button>
           </div>
-          <button class="example__button">Стало</button>
+          </div>
+          </section>
         </div>
-      </section>
-
       <section class="contacts">
         <div class="contacts__header container">
           <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>

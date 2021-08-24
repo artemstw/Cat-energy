@@ -1,0 +1,36 @@
+.example-item__value {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example-item__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example-item__title {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 35px;
+  background-color: $background-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .example-item__title {
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    background-color: $basic-white;
+  }
+}
