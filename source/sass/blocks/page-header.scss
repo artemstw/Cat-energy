@@ -1,16 +1,18 @@
 .page-header {
   background-color: transparent;
-  margin-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    margin-top: 24px;
     display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    margin-top: 53px;
     justify-content: space-between;
   }
 }
@@ -20,14 +22,13 @@
   height: 38px;
   width: 190px;
   margin-bottom: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
     height: 52px;
     width: 174px;
+    margin-right: 95px;
   }
 }
 
@@ -35,5 +36,6 @@
   .page-header__logo {
     height: 59px;
     width: 202px;
+    margin-right: 540px;
   }
 }

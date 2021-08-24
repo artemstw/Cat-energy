@@ -112,6 +112,13 @@
   margin-bottom: 23px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__image {
+    width: 708px;
+    height: 620px;
+  }
+}
+
 .example__toggler-wrapper {
   display: flex;
   margin-right: 45px;

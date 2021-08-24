@@ -2,6 +2,22 @@
   background-color: $basic-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
 .page-footer__brand {
   display: block;
   text-align: center;
