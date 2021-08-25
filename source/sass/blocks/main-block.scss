@@ -44,21 +44,6 @@
   .main-block::before {
     content: none;
   }
-
-  @media (min-width: $desktop-width) {
-    .main-block::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -134px;
-      left: 758px;
-      width: 720px;
-      height: 696px;
-      background-color: $basic-green;
-      background-image: url("/img/desktop-background-image.jpg");
-      background-size: 720px auto;
-    }
-  }
 }
 
 .main-block__header {
@@ -163,7 +148,7 @@
   .main-block__image {
     width: 552px;
     height: 499px;
-    left: 600px;
+    left: 560px;
     top: 10px;
   }
 }

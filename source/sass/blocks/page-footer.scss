@@ -4,9 +4,12 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 128px 1fr 163px;
+    grid-gap: 128px;
+    padding-top: 22px;
     padding-right: 30px;
+    padding-bottom: 22px;
     padding-left: 30px;
   }
 }
@@ -26,7 +29,7 @@
   margin-bottom: 52px;
 }
 
-.page-footer__brand img {
+.page-footer__brand {
   width: 128px;
   height: 24px;
 }

@@ -5,6 +5,12 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: $basic-white;
+    background-image: linear-gradient(
+      $basic-white 0%,
+      $basic-white 57%,
+      $basic-grey 57%,
+      $basic-grey 100%
+    );
   }
 }
 
@@ -17,6 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
+    padding-right: 30px;
+    padding-bottom: 64px;
+    padding-left: 30px;
     border-top: 1px solid $border-grey;
   }
 }
@@ -49,7 +58,6 @@
   .example__header {
     font-size: 60px;
     line-height: 60px;
-    padding-left: 30px;
     margin-bottom: 63px;
   }
 }
@@ -71,7 +79,7 @@
   .example__text {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 30px;
+    margin-bottom: 54px;
   }
 }
 
@@ -85,6 +93,7 @@
 @media (min-width: $tablet-width) {
   .example__expences-wrapper {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -100,8 +109,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
   margin-bottom: 26px;
 }
 
@@ -123,7 +130,6 @@
 @media (min-width: $tablet-width) {
   .example__item {
     width: 162px;
-    margin-right: 42px;
   }
 }
 
@@ -140,7 +146,8 @@
   .example__expences {
     font-size: 20px;
     line-height: 20px;
-    text-align: left;
+    width: 174px;
+    text-align: right;
   }
 }
 
@@ -194,4 +201,8 @@
   position: absolute;
   top: 4px;
   left: 5px;
+}
+
+.example__expences-value {
+  line-height: 39px;
 }

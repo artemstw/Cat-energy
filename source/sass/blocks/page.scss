@@ -16,4 +16,20 @@
   font-weight: $regular;
   color: $basic-black;
   counter-reset: itemNum;
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .page__body::after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 696px;
+    background-color: $basic-green;
+    background-image: url("/img/desktop-background-image.jpg");
+    background-size: 720px auto;
+  }
 }

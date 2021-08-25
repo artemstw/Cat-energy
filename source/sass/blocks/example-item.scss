@@ -1,3 +1,9 @@
+@media (min-width: $tablet-width) {
+  .example-item {
+    margin-right: 42px;
+  }
+}
+
 .example-item__value {
   margin: 0;
   padding: 0;
@@ -28,9 +34,25 @@
 
 @media (min-width: $tablet-width) {
   .example-item__title {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-width: 97px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
     font-size: 14px;
     line-height: 14px;
     white-space: nowrap;
+    bottom: -6px;
+    padding-right: 9px;
+    padding-left: 9px;
     background-color: $basic-white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-item__title {
+    background-color: $basic-grey;
   }
 }
