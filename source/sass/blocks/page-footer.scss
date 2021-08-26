@@ -2,9 +2,34 @@
   background-color: $basic-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: grid;
+    grid-template-columns: 128px 1fr 163px;
+    grid-gap: 128px;
+    padding-top: 22px;
+    padding-right: 30px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
 .page-footer__brand {
   display: block;
   text-align: center;
   margin-top: 39px;
+  margin-right: 413px;
   margin-bottom: 52px;
+}
+
+.page-footer__brand {
+  width: 128px;
+  height: 24px;
 }

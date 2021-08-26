@@ -1,0 +1,58 @@
+@media (min-width: $tablet-width) {
+  .example-item {
+    margin-right: 42px;
+  }
+}
+
+.example-item__value {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example-item__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example-item__title {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 35px;
+  background-color: $background-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .example-item__title {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-width: 97px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    bottom: -6px;
+    padding-right: 9px;
+    padding-left: 9px;
+    background-color: $basic-white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-item__title {
+    background-color: $basic-grey;
+  }
+}
