@@ -1,20 +1,51 @@
+.add-products {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .add-products__header {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: $regular;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 49px;
 }
 
 .add-products__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.add-products__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 31px;
+}
+
 .add-products__title {
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: $regular;
+  margin-bottom: 13px;
+}
+
+.add-products__amount {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.add-products__price {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .add-products__button {

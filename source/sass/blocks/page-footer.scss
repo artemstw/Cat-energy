@@ -2,6 +2,11 @@
   background-color: $basic-grey;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: grid;
@@ -23,13 +28,17 @@
 
 .page-footer__brand {
   display: block;
-  text-align: center;
+  align-self: center;
   margin-top: 39px;
-  margin-right: 413px;
   margin-bottom: 52px;
 }
 
 .page-footer__brand {
   width: 128px;
   height: 24px;
+}
+
+.page-footer__socials {
+  width: 125px;
+  align-self: center;
 }
