@@ -1,5 +1,12 @@
 .catalog {
   padding: 0 20px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 30px;
+  }
 }
 
 .catalog__list {
