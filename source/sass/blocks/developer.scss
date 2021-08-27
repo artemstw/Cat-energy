@@ -5,6 +5,13 @@
   align-items: center;
 }
 
+@media (min-width: $tablet-width) {
+  .developer {
+    width: 163px;
+    padding-left: 0;
+  }
+}
+
 .developer__name {
   font-family: "Arial", sans-serif;
   color: $special-dark-grey;

@@ -22,6 +22,12 @@
   padding: 0 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .show-more {
+    background-color: $basic-white;
+  }
+}
+
 .show-more__header {
   margin: 0;
   padding: 0;
@@ -31,6 +37,13 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more__header {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .show-more__text {
@@ -43,13 +56,24 @@
   margin-bottom: 21px;
 }
 
+@media (min-width: $tablet-width) {
+  .show-more__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin: 0 auto;
+  }
+}
+
 .show-more__button {
+  display: block;
   width: 280px;
   height: 40px;
   color: $special-dark-grey;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .show-more__button--grey {

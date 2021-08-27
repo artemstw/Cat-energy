@@ -8,6 +8,13 @@
   left: 101px;
 }
 
+@media (min-width: $tablet-width) {
+  .gift__icon {
+    top: 57px;
+    left: 77px;
+  }
+}
+
 .gift__slogan {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -18,4 +25,11 @@
   position: absolute;
   top: 189px;
   left: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__slogan {
+    top: 71px;
+    left: 422px;
+  }
 }

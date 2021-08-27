@@ -2,6 +2,12 @@
   background-color: $basic-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    height: 150px;
+  }
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -9,9 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    display: grid;
-    grid-template-columns: 128px 1fr 163px;
-    grid-gap: 128px;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 22px;
     padding-right: 30px;
     padding-bottom: 22px;

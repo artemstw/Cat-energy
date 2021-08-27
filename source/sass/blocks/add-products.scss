@@ -4,6 +4,19 @@
   padding-left: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .add-products {
+    padding-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-products {
+    padding: 0 110px;
+    margin-bottom: 86px;
+  }
+}
+
 .add-products__header {
   margin: 0;
   padding: 0;
@@ -13,10 +26,23 @@
   margin-bottom: 49px;
 }
 
+@media (min-width: $tablet-width) {
+  .add-products__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .add-products__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .add-products__list {
+    margin-bottom: 69px;
+  }
 }
 
 .add-products__item {
@@ -28,10 +54,29 @@
   padding-bottom: 13px;
 }
 
+@media (min-width: $tablet-width) {
+  .add-products__item {
+    border: 1px solid $special-grey;
+    padding: 28px 38px;
+  }
+}
+
 .add-products__wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-products__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-products__wrapper {
+    flex-direction: row;
+  }
 }
 
 .add-products__title {
@@ -43,6 +88,13 @@
   margin-bottom: 13px;
 }
 
+@media (min-width: $tablet-width) {
+  .add-products__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .add-products__amount {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -50,11 +102,25 @@
   line-height: 14px;
 }
 
+@media (min-width: $tablet-width) {
+  .add-products__amount {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .add-products__price {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-products__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .add-products__button {
@@ -66,10 +132,22 @@
   cursor: pointer;
 }
 
+@media (min-width: $tablet-width) {
+  .add-products__button {
+    width: 632px;
+  }
+}
+
 .add-products__button--green {
   background-color: $basic-green;
 }
 
 .add-products__gift {
   padding-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-products__gift {
+    padding-top: 0;
+  }
 }

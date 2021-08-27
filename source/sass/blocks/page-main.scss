@@ -18,3 +18,10 @@
     line-height: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    padding-left: 110px;
+    margin-bottom: 84px;
+  }
+}
