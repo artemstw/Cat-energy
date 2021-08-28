@@ -4,7 +4,6 @@
 }
 
 .page-main__header {
-  padding: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: $regular;
@@ -16,6 +15,7 @@
   .page-main__header {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 82px;
   }
 }
 

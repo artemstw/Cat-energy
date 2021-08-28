@@ -6,6 +6,8 @@
 
 @media (min-width: $tablet-width) {
   .add-products {
+    padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 76px;
   }
 }
@@ -30,6 +32,7 @@
   .add-products__header {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 67px;
   }
 }
 
@@ -64,6 +67,7 @@
 .add-products__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 15px;
 }
 
