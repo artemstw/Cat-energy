@@ -1,3 +1,19 @@
+.form {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0 110px;
+  }
+}
+
 .form__header {
   margin: 0;
   padding: 0;
@@ -7,10 +23,38 @@
   margin-bottom: 35px;
 }
 
+@media (min-width: $tablet-width) {
+  .form__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .form__text {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__fieldset {
@@ -27,8 +71,16 @@
 }
 
 .form__label {
+  color: $special-dark-grey;
   text-transform: uppercase;
   margin-right: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label {
+    font-size: 20px;
+    line-height: auto;
+  }
 }
 
 .form__label--radio {
@@ -40,6 +92,15 @@
   text-transform: uppercase;
   margin-bottom: 13px;
   height: 45px;
+  border: 1px solid $input-border-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .form__input {
+    font-size: 20px;
+    height: 52px;
+    padding-left: 21px;
+  }
 }
 
 .form__list {
@@ -47,12 +108,42 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .form__list--additional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset-button-wrapper {
+    display: flex;
+  }
+}
+
 .form__area {
   width: 280px;
-  height: 150px;
+  min-height: 150px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  border: 1px solid $input-border-grey;
   margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__area {
+    width: 631px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__area {
+    width: 1220px;
+  }
 }
 
 .form__button {
@@ -64,6 +155,32 @@
   cursor: pointer;
 }
 
+@media (min-width: $tablet-width) {
+  .form__button {
+    width: 282px;
+    margin-right: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    width: 568px;
+  }
+}
+
 .form__button--green {
   background-color: $basic-green;
+}
+
+.form__required-field {
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__required-field {
+    font-size: 16px;
+  }
 }

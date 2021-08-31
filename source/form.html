@@ -65,94 +65,95 @@
           программу питания для вашего кота
         </p>
 
-        <fieldset class="form__fieldset">
-          <ul class="form__list container">
-            <li class="form__item">
-              <label class="form__label" for="cat-name">Имя*</label>
-              <input
-                class="form__input"
-                type="text"
-                id="cat-name"
-                name="name"
-                placeholder="Барсик"
-                required
-              />
-            </li>
+        <div class="form__list-wrapper">
+          <fieldset class="form__fieldset">
+            <ul class="form__list container">
+              <li class="form__item">
+                <label class="form__label" for="cat-name">Имя*</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="cat-name"
+                  name="name"
+                  placeholder="Барсик"
+                  required
+                />
+              </li>
 
-            <li class="form__item">
-              <label class="form__label" for="cat-weight">Вес (Кг):*</label>
-              <input
-                class="form__input"
-                type="text"
-                id="cat-weight"
-                name="weight"
-                placeholder="7"
-                required
-              />
-            </li>
+              <li class="form__item">
+                <label class="form__label" for="cat-weight">Вес (Кг):*</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="cat-weight"
+                  name="weight"
+                  placeholder="7"
+                  required
+                />
+              </li>
 
-            <li class="form__item">
-              <label class="form__label" for="cat-age">Возраст (Лет):</label>
-              <input
-                class="form__input"
-                type="text"
-                id="cat-age"
-                name="name"
-                placeholder="7"
-              />
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="form__fieldset">
-          <ul class="form__list container">
-            <li class="form__item">
-              <input
-                class="form__input--radio"
-                type="radio"
-                id="radio-1"
-                name="aim-question"
-                checked
-              />
-              <label class="form__label form__label--radio" for="radio-1">
-                Похудение</label
-              >
-            </li>
-            <li class="form__item">
-              <input
-                class="form__input--radio"
-                type="radio"
-                id="radio-2"
-                name="aim-question"
-              />
-              <label class="form__label form__label--radio" for="radio-2"
-                >Набор массы</label
-              >
-            </li>
-            <li class="form__item">
-              <input
-                class="form__input--radio"
-                type="radio"
-                id="radio-3"
-                name="aim-question"
-              />
-              <label class="form__label form__label--radio" for="radio-3"
-                >Не знаю (нужен ваш совет)</label
-              >
-            </li>
-          </ul>
-        </fieldset>
-
-        <section class="form__owner">
-          <div class="container">
-            <h2 class="form__header form__header--owner">
-              Контактные данные<br />
-              (владельца кота)
-            </h2>
-          </div>
+              <li class="form__item">
+                <label class="form__label" for="cat-age">Возраст (Лет):</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="cat-age"
+                  name="name"
+                  placeholder="7"
+                />
+              </li>
+            </ul>
+          </fieldset>
 
           <fieldset class="form__fieldset">
             <ul class="form__list container">
+              <li class="form__item">
+                <input
+                  class="form__input--radio"
+                  type="radio"
+                  id="radio-1"
+                  name="aim-question"
+                  checked
+                />
+                <label class="form__label form__label--radio" for="radio-1">
+                  Похудение</label
+                >
+              </li>
+              <li class="form__item">
+                <input
+                  class="form__input--radio"
+                  type="radio"
+                  id="radio-2"
+                  name="aim-question"
+                />
+                <label class="form__label form__label--radio" for="radio-2"
+                  >Набор массы</label
+                >
+              </li>
+              <li class="form__item">
+                <input
+                  class="form__input--radio"
+                  type="radio"
+                  id="radio-3"
+                  name="aim-question"
+                />
+                <label class="form__label form__label--radio" for="radio-3"
+                  >Не знаю (нужен ваш совет)</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+
+
+          <fieldset class="form__fieldset">
+            <div class="container">
+              <h2 class="form__header form__header--owner">
+              Контактные данные (владельца кота)
+              </h2>
+
+            <ul class="form__list form__list--contacts">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:*</label>
                 <input
@@ -163,8 +164,8 @@
                   required
                 />
               </li>
-              <li>
-                <label class="owner__label" for="phone">Телефон:*</label>
+              <li class="form__item">
+                <label class="form__label" for="phone">Телефон:*</label>
                 <input
                   class="form__input form__input--phone"
                   type="tel"
@@ -175,7 +176,7 @@
               </li>
             </ul>
           </fieldset>
-        </section>
+        </div>
 
         <section class="form__comment">
           <div class="container">
@@ -192,7 +193,7 @@
             <h2 class="form__header form__header-additional">Дополнительно</h2>
           </div>
 
-          <ul class="form__list container">
+          <ul class="form__list form__list--additional container">
             <li class="form__item">
               <input class="form__input" type="checkbox" id="check-1" checked />
               <label class="form__label" for="check-1">Сахарозаменитель</label>
@@ -214,11 +215,12 @@
             </li>
           </ul>
         </fieldset>
-
-        <button class="form__button form__button--green">
-          Отправить заявку
-        </button>
-        <p class="form__text">* — Обязательные поля</p>
+        <div class="form__fieldset-button-wrapper container">
+          <button class="form__button form__button--green">
+            Отправить заявку
+          </button>
+          <p class="form__text form__required-field">* — Обязательные поля</p>
+        </div>
       </form>
 
       <section class="contacts contacts--catalog">
