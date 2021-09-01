@@ -3,10 +3,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    height: 150px;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    display: grid;
-    grid-template-columns: 128px 1fr 163px;
-    grid-gap: 128px;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 22px;
     padding-right: 30px;
     padding-bottom: 22px;
@@ -23,13 +33,17 @@
 
 .page-footer__brand {
   display: block;
-  text-align: center;
+  align-self: center;
   margin-top: 39px;
-  margin-right: 413px;
   margin-bottom: 52px;
 }
 
 .page-footer__brand {
   width: 128px;
   height: 24px;
+}
+
+.page-footer__socials {
+  width: 125px;
+  align-self: center;
 }

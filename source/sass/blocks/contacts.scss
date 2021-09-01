@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.contacts--catalog {
+  background-color: $basic-grey;
+}
+
 .contacts__header {
   display: flex;
   box-sizing: border-box;
@@ -26,7 +30,7 @@
     min-height: 201px;
     position: absolute;
     top: 95px;
-    left: 570px;
+    left: 110px;
     background-color: $basic-white;
   }
 }
@@ -47,7 +51,7 @@
 @media (min-width: $tablet-width) {
   .contacts__invite {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
   }
 }
 
@@ -63,7 +67,7 @@
   padding-bottom: 26px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .contacts__address {
     font-size: 16px;
   }

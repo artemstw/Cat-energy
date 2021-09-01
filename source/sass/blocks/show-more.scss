@@ -1,13 +1,36 @@
-.plus {
+.show-more {
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    background-color: $basic-white;
+    min-height: 430px;
+    border: 2px solid $basic-grey;
+  }
+}
+
+.show-more__plus {
   background: $plus-color;
   height: 30px;
   position: relative;
   width: 2px;
-  margin: 0 auto;
   margin-bottom: 23px;
 }
 
-.plus:after {
+@media (min-width: $tablet-width) {
+  .show-more__plus {
+    height: 60px;
+    margin-top: 52px;
+    margin-bottom: 49px;
+  }
+}
+
+.show-more__plus:after {
   background: $plus-color;
   content: "";
   height: 2px;
@@ -17,8 +40,10 @@
   width: 30px;
 }
 
-.show-more {
-  padding: 0 20px;
+@media (min-width: $tablet-width) {
+  .show-more__plus:after {
+    width: 60px;
+  }
 }
 
 .show-more__header {
@@ -28,27 +53,50 @@
   font-weight: $regular;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
   margin-bottom: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more__header {
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    margin-bottom: 23px;
+  }
 }
 
 .show-more__text {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  text-align: center;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 21px;
 }
 
+@media (min-width: $tablet-width) {
+  .show-more__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin-bottom: 87px;
+  }
+}
+
 .show-more__button {
+  display: block;
   width: 280px;
   height: 40px;
-  color: $basic-black;
+  color: $special-dark-grey;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more__button {
+    width: 249px;
+  }
 }
 
 .show-more__button--grey {
