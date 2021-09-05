@@ -1,17 +1,28 @@
 .programs-item {
   position: relative;
+  padding-top: 29px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.programs-item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 24px;
+  left: 22px;
+  background-color: $basic-green;
+  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {
   .programs-item::before {
-    content: "";
-    position: absolute;
     width: 200px;
     height: 200px;
     top: 80px;
     left: 450px;
-    background-color: $basic-green;
-    border-radius: 50%;
   }
 }
 
@@ -35,8 +46,7 @@
   line-height: 37px;
   text-transform: uppercase;
   font-weight: $regular;
-  padding-top: 30px;
-  padding-left: 91px;
+  padding-left: 71px;
   margin-bottom: 29px;
 }
 
@@ -65,8 +75,8 @@
 .programs-item__title--slim::before {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 23px;
+  top: -10px;
+  left: 9px;
   width: 50px;
   height: 53px;
   background-image: url("/img/slim-cat.svg");
@@ -104,8 +114,8 @@
 .programs-item__title--pro::before {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 10px;
+  top: 7px;
+  left: -9px;
   width: 67px;
   height: 50px;
   background-image: url("/img/pro-cat-mobile.svg");
@@ -141,10 +151,10 @@
   padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  margin-bottom: 38px;
-  width: 227px;
   min-height: 90px;
-  padding-left: 20px;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
@@ -154,6 +164,7 @@
     width: 340px;
     padding-left: 52px;
     margin-bottom: 48px;
+    border-bottom: none;
   }
 }
 
@@ -174,7 +185,6 @@
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 19px;
-  padding-bottom: 22px;
   position: relative;
 }
 
