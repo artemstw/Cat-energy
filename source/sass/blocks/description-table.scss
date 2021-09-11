@@ -1,5 +1,26 @@
+.description-table {
+  width: 140px;
+  border-collapse: collapse;
+}
+
+@media (min-width: $tablet-width) {
+  .description-table {
+    width: 100%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .description-table__row {
     border-bottom: 1px solid $special-grey;
+  }
+}
+
+.description-table__cell {
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description-table__cell {
+    padding: 9px 0 7px;
   }
 }

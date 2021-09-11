@@ -2,14 +2,14 @@
   text-align: center;
   margin: 0;
   box-sizing: border-box;
-  margin-bottom: 50px;
   padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .show-more {
     background-color: $basic-white;
-    min-height: 430px;
+    width: 324px;
+    height: 429px;
     border: 2px solid $basic-grey;
   }
 }
@@ -19,6 +19,8 @@
   height: 30px;
   position: relative;
   width: 2px;
+  margin: 0 auto;
+  margin-top: 25px;
   margin-bottom: 23px;
 }
 
@@ -43,6 +45,8 @@
 @media (min-width: $tablet-width) {
   .show-more__plus:after {
     width: 60px;
+    top: 28px;
+    left: -28px;
   }
 }
 
@@ -61,6 +65,7 @@
     font-size: 20px;
     line-height: 22px;
     width: 134px;
+    margin: 0 auto;
     margin-bottom: 23px;
   }
 }
@@ -79,6 +84,7 @@
     font-size: 16px;
     line-height: 18px;
     width: 167px;
+    margin: 0 auto;
     margin-bottom: 87px;
   }
 }
