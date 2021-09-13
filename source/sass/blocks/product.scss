@@ -14,8 +14,8 @@
     border-top: none;
     background-image: linear-gradient(
       $basic-white 0%,
-      $basic-white 25%,
-      $basic-grey 25%,
+      $basic-white 15%,
+      $basic-grey 15%,
       $basic-grey 100%
     );
   }
@@ -53,6 +53,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .product__info {
+    width: 166px;
+  }
+}
+
 .product__title {
   margin: 0;
   padding: 0;
@@ -70,8 +76,7 @@
     line-height: 24px;
     width: 125px;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 21px;
+    margin: 0 auto 20px;
   }
 }
 

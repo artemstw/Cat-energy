@@ -9,8 +9,16 @@
   .show-more {
     background-color: $basic-white;
     width: 324px;
-    height: 429px;
+    height: 413px;
     border: 2px solid $basic-grey;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more {
+    width: 245px;
+    height: 413px;
   }
 }
 
@@ -29,6 +37,12 @@
     height: 60px;
     margin-top: 52px;
     margin-bottom: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__plus {
+    margin-top: 51px;
   }
 }
 
@@ -85,11 +99,12 @@
     line-height: 18px;
     width: 167px;
     margin: 0 auto;
-    margin-bottom: 87px;
+    margin-bottom: 67px;
   }
 }
 
 .show-more__button {
+  padding: 0;
   display: block;
   width: 280px;
   height: 40px;
@@ -102,6 +117,12 @@
 @media (min-width: $tablet-width) {
   .show-more__button {
     width: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__button {
+    width: 169px;
   }
 }
 

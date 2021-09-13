@@ -24,3 +24,9 @@
     padding: 9px 0 7px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .description-table__cell:last-child {
+    text-align: right;
+  }
+}

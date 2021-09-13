@@ -2,6 +2,7 @@
   padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,11 +20,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .add-products::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    background-color: $basic-green;
+    height: 3px;
+    width: 100%;
+  }
+}
+
 .add-products__header {
   font-size: 24px;
   line-height: 24px;
   font-weight: $regular;
   margin-bottom: 36px;
+  background-color: $basic-white;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +45,13 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-products__header {
+    margin-bottom: 81px;
+    margin-left: 0;
   }
 }
 
@@ -49,22 +70,21 @@
 @media (min-width: $desktop-width) {
   .add-products__list {
     width: 896px;
+    margin-bottom: 0;
   }
 }
 
 .add-products__item {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   border-top: 1px solid $special-grey;
-  padding-top: 13px;
-  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .add-products__item {
+    align-items: baseline;
     border: 1px solid $special-grey;
-    padding: 28px 38px;
+    padding: 0 38px;
   }
 }
 
@@ -72,7 +92,7 @@
   .add-products__item {
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 0;
     border-right: none;
     border-left: none;
   }
@@ -99,18 +119,21 @@
 }
 
 .add-products__title {
-  margin: 0;
+  width: 100%;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: $regular;
-  margin-bottom: 13px;
+  margin: 13px 0;
 }
 
 @media (min-width: $tablet-width) {
   .add-products__title {
     font-size: 20px;
     line-height: 20px;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -125,20 +148,24 @@
   .add-products__amount {
     font-size: 16px;
     line-height: 20px;
+    margin-left: auto;
   }
 }
 
 .add-products__price {
-  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+  margin: 0 0 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .add-products__price {
     font-size: 16px;
     line-height: 20px;
+    width: 95px;
+    margin-left: unset;
+    text-align: right;
   }
 }
 
@@ -148,6 +175,8 @@
   color: $basic-white;
   text-transform: uppercase;
   border: none;
+  margin-top: 15px;
+  margin-bottom: 17px;
   cursor: pointer;
 }
 
