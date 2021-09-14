@@ -8,20 +8,26 @@
   line-height: 36px;
   font-weight: $regular;
   padding-left: 20px;
-  margin-bottom: 37px;
+  margin: 0 auto 28px;
+  padding: 14px 20px 0;
+  border-top: 1px solid $border-grey;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__header {
     font-size: 60px;
     line-height: 60px;
-    padding-left: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-bottom: 82px;
+    border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__header {
+    padding-top: 0;
+    padding-right: 0;
     padding-left: 110px;
     margin-bottom: 84px;
   }

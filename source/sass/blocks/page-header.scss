@@ -1,24 +1,25 @@
 .page-header {
   background-color: transparent;
   position: relative;
-  padding-top: 11px;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
     padding-right: 30px;
     padding-left: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     margin-top: 53px;
+    margin-bottom: 53px;
     padding-right: 110px;
     padding-left: 110px;
   }
@@ -28,7 +29,6 @@
   display: block;
   height: 38px;
   width: 190px;
-  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {

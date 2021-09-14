@@ -33,3 +33,10 @@
     left: 422px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift__slogan {
+    top: 190px;
+    left: 40px;
+  }
+}
